@@ -1,12 +1,11 @@
-import NavBar from "./components/NavBar";
-import { Hero } from "./components/Hero";
+import Main from "./components/Content";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   return (
     <section>
       <h2>App components Here</h2>
-      <Hero />
-      <NavBar />
+      <Main />
     </section>
   );
 }

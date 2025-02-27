@@ -1,9 +1,12 @@
-export function Hero() {
+import "./index.css"; // Import the CSS file
+
+function Hero() {
   return (
-    <section>
-      <img src="/assets/nature.jpg" />
-      <h2>Hello React developer</h2>
-      <p>Learn react in freecode camp</p>
-    </section>
+    <div className="hero-section">
+      <h1>Welcome to My App</h1>
+      <p>This is the hero component!</p>
+    </div>
   );
 }
+
+export default Hero;
