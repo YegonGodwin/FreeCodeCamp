@@ -1,27 +1,14 @@
 import { createRoot } from "react-dom/client";
-import { Hero } from "./components/Hero";
+import App from "./App";
 
-const root = createRoot(document.getElementById("root")!);
-
-function NavBar() {
-  return (
-    <section>
-      <ul>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Contact</li>
-      </ul>
-    </section>
-  );
-}
+const root = createRoot(document.getElementById("root")!); /*
 
 function App() {
   return (
     <section>
-      <Hero />
-      <NavBar />
       <h2>Fun fact about React</h2>;
+      <Content />
     </section>
   );
-}
+} */
 root.render(<App />);
