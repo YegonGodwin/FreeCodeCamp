@@ -1,6 +1,8 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import { BrowserRouter } from "react-router-dom";
+import Homepage from "./components/Header";
+import Footer from "./components/Footer";
+/*
 import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
 import NewsPage from "./pages/NewsPage";
@@ -8,18 +10,9 @@ import DetailedNews from "./pages/DetailedNews";
 import ScoresPage from "./pages/ScoresPage";
 import FixturesPage from "./pages/FixturesPage";
 import TransfersPage from "./pages/TransfersPage";
-import TeamPage from "./pages/TeamPage";
-import PlayerPage from "./pages/PlayerPage";
-import QuizPage from "./pages/QuizPage";
-import PodCastPage from "./pages/PodCastPage";
-import SearchResultsPage from "./pages/SearchResultsPage";
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
+ <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/home" element={<Homepage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/news/:id" element={<DetailedNews />} />
         <Route path="/scores" element={<ScoresPage />} />
@@ -31,6 +24,16 @@ function App() {
         <Route path="/podcasts" element={<PodCastPage />} />
         <Route path="/search" element={<SearchResultsPage />} />
       </Routes>
+import TeamPage from "./pages/TeamPage";
+import PlayerPage from "./pages/PlayerPage";
+import QuizPage from "./pages/QuizPage";
+import PodCastPage from "./pages/PodCastPage";
+import SearchResultsPage from "./pages/SearchResultsPage";
+*/
+function App() {
+  return (
+    <BrowserRouter>
+      <Homepage />
       <Footer />
     </BrowserRouter>
   );
