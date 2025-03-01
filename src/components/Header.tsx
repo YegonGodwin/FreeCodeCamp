@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import HeroSection from "./Herosection";
+import Header from "./HeroSection";
 import NewsCarousel from "./NewsPage";
 import LiveScores from "./UpcomingFixtures";
 import UpcomingFixtures from "./Footer";
@@ -9,7 +9,7 @@ import ScoresPage from "./ScoresPage";
 const Homepage: React.FC = () => {
   return (
     <Container fluid className="p-0">
-      <HeroSection />
+      <Header />
       <Row className="my-4">
         <Col md={6}>
           <NewsCarousel />
