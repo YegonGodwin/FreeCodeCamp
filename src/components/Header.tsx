@@ -1,20 +1,24 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Header from "./HeroSection";
-import NewsCarousel from "./NewsPage";
 import LiveScores from "./UpcomingFixtures";
 import UpcomingFixtures from "./Footer";
 import ScoresPage from "./ScoresPage";
+import Goal from "./Goal";
+import NewsPage from "./NewsPage";
 
 const Homepage: React.FC = () => {
   return (
     <Container fluid className="p-0">
-      <Header />
-      <Row className="my-4">
-        <Col md={6}>
-          <NewsCarousel />
+      <Row className="bg-dark text-white py-3">
+        <Col>
+          <Goal />
         </Col>
-        <Col md={6}>
+      </Row>
+      <Row className="my-4">
+        <Col md={8}>
+          <NewsPage />
+        </Col>
+        <Col md={4}>
           <LiveScores />
         </Col>
       </Row>

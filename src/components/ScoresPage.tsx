@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Tabs, Tab } from "react-bootstrap";
 
 const ScoresPage: React.FC = () => {
